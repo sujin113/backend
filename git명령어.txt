@@ -1,0 +1,84 @@
+협업 시에는 항상 pull하고 push하기 안그러면 충돌
+
+git clone https://github.com/sujin113/Git-Tutorial.git
+git commit -m "Add Text File [document.txt]"
+git push (-f: 강제옵션)
+git status
+git  add update.txt
+git reset update.txt
+git status
+git add update.txt
+git status
+update.txt 내용 수정
+git status
+git commit
+git push
+수정된 내용이 git에 올라감.
+
+git log
+:는 더 많은 내용을 보여줌. enter로 보면됨.
+다 보고 나서는 q로 퇴장 
+
+git reset --hard log 해시 
+이 log 전은 다 지워지고 이때로 돌아감(로컬에만)
+git push -f 강제 푸쉬 로컬과 원격이 같아짐
+ 
+git add .
+git commit -m ""
+git push
+git commit --amend
+커밋 메시지 수정
+:wq!
+
+git branch
+git branch add develop
+git branch
+git checkout develop
+test.txt 수정
+git add .
+git commit -m "test.txt [branch]"
+git log
+마스터에서 수행한 일과 디벨롭에서 수행한  작업이 달라 merge해야함
+git checkout master
+git merge develop
+git log
+git push
+git branch -d develop 
+병합이 끝나면 브랜치는 삭제
+git branch
+git branch add develop
+git branch
+git checkout develop
+git branch
+test.txt 수정
+git add . 
+git commit -m ""
+git log
+git checkout master
+test.txt 수정
+git add .
+git commit -m "'
+git log
+git checkout develop
+git log
+git checkout master
+git merge develop
+test.txt가 달라 충돌발생
+<<<<<<< HEAD
+study merge //crush test
+=======
+study merge
+>>>>>>> develop
+헤드는 마스터. 이렇게 직접 충돌부분을 보여준다
+원하는대로 수정
+git  add . 
+git commit -m ""
+git merge develop
+git log (master와 branch log를 한 번에 보여줌)
+git push
+git remote show origin : origin 내용 모두 볼 수 있음
+git remote add 원격저장소
+git log origin/master
+git remote -v
+git remote rm 원격저장소 : 원격저장소 삭제 
+git remote -v
