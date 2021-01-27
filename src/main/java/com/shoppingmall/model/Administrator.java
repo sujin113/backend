@@ -2,26 +2,26 @@ package com.shoppingmall.model;
 
 public class Administrator {
 	
-	private String admin_id;
-	private String admin_pwd;
-	private String admin_name;
+	private String administrator_id;
+	private String administrator_pwd;
+	private String administrator_name;
 	
-	public String getAdmin_id() {
-		return admin_id;
+	public String getAdministrator_id() {
+		return administrator_id;
 	}
-	public void setAdmin_id(String admin_id) {
-		this.admin_id = admin_id;
+	public void setAdministrator_id(String administrator_id) {
+		this.administrator_id = administrator_id;
 	}
-	public String getAdmin_pwd() {
-		return admin_pwd;
+	public String getAdministrator_pwd() {
+		return administrator_pwd;
 	}
-	public void setAdmin_pwd(String admin_pwd) {
-		this.admin_pwd = admin_pwd;
+	public void setAdministrator_pwd(String administrator_pwd) {
+		this.administrator_pwd = administrator_pwd;
 	}
-	public String getAdmin_name() {
-		return admin_name;
+	public String getAdministrator_name() {
+		return administrator_name;
 	}
-	public void setAdmin_name(String admin_name) {
-		this.admin_name = admin_name;
+	public void setAdministrator_name(String administrator_name) {
+		this.administrator_name = administrator_name;
 	}
 }
